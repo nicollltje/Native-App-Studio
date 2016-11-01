@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					B3ED18741DC8A3AF00ADB6A7 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 88Z7G427W2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88Z7G427W2;
 				INFOPLIST_FILE = "Nicol Heijtbrink-pset1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.Nicol-Heijtbrink-pset1";
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88Z7G427W2;
 				INFOPLIST_FILE = "Nicol Heijtbrink-pset1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.Nicol-Heijtbrink-pset1";
