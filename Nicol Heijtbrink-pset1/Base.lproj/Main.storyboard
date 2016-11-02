@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,20 +18,67 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xPT-6m-rAb">
-                                <rect key="frame" x="10" y="20" width="758" height="994"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xPT-6m-rAb">
+                                <rect key="frame" x="10" y="20" width="365" height="637"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-qn-Agp">
-                                        <rect key="frame" x="0.0" y="0.0" width="758" height="799"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-YL-zZ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="442"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-qn-Agp">
+                                                <rect key="frame" x="37" y="8" width="290" height="428"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arms" translatesAutoresizingMaskIntoConstraints="NO" id="PRs-GB-nVp">
+                                                <rect key="frame" x="62" y="121" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ears" translatesAutoresizingMaskIntoConstraints="NO" id="uU4-wk-yKK">
+                                                <rect key="frame" x="62" y="72" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyebrows" translatesAutoresizingMaskIntoConstraints="NO" id="NVt-84-Cq0">
+                                                <rect key="frame" x="62" y="93" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes" translatesAutoresizingMaskIntoConstraints="NO" id="wD4-Ji-52r">
+                                                <rect key="frame" x="62" y="106" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glasses" translatesAutoresizingMaskIntoConstraints="NO" id="Txk-Xq-cbS">
+                                                <rect key="frame" x="62" y="106" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hat" translatesAutoresizingMaskIntoConstraints="NO" id="y0e-fV-jyj">
+                                                <rect key="frame" x="62" y="72" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mustache" translatesAutoresizingMaskIntoConstraints="NO" id="d8f-uF-va8">
+                                                <rect key="frame" x="62" y="93" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nose" translatesAutoresizingMaskIntoConstraints="NO" id="ZTi-CA-SyK">
+                                                <rect key="frame" x="62" y="106" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shoes" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-6y-sUV">
+                                                <rect key="frame" x="62" y="218" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mouth" translatesAutoresizingMaskIntoConstraints="NO" id="eCb-Jp-Ty3">
+                                                <rect key="frame" x="62" y="121" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Reb-ct-5Re">
-                                        <rect key="frame" x="0.0" y="799" width="758" height="195"/>
+                                        <rect key="frame" x="0.0" y="442" width="365" height="195"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HRf-M6-eYG">
-                                                <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="195"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTs-Vo-vEM">
                                                         <rect key="frame" x="0.0" y="0.0" width="40.5" height="31"/>
@@ -66,28 +113,43 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cXT-sT-pGZ">
-                                                <rect key="frame" x="205" y="0.0" width="129.5" height="195"/>
+                                                <rect key="frame" x="104" y="0.0" width="62" height="195"/>
                                                 <subviews>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="E95B511D-2D76-4F89-BD8E-8AA325DE00D0" translatesAutoresizingMaskIntoConstraints="NO" id="IOB-35-Vb8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="31"/>
-                                                        <variation key="heightClass=regular-widthClass=compact" onImage="E95B511D-2D76-4F89-BD8E-8AA325DE00D0"/>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="E064F5F6-60D2-4387-AE19-C3DDC947770B" translatesAutoresizingMaskIntoConstraints="NO" id="IOB-35-Vb8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64" height="31"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" onImage="E064F5F6-60D2-4387-AE19-C3DDC947770B"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="PVP-R9-nmb"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ov-Ws-qYL">
-                                                        <rect key="frame" x="0.0" y="41" width="131.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="41" width="64" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="dOE-Co-NEO"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-Ms-PCV">
-                                                        <rect key="frame" x="0.0" y="82" width="131.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="82" width="64" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="bPY-a0-sfz"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-pW-EzS">
-                                                        <rect key="frame" x="0.0" y="123" width="131.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="123" width="64" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="HfR-FJ-HRH"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxA-mU-BCV">
-                                                        <rect key="frame" x="0.0" y="164" width="131.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="164" width="64" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="bQG-YR-TKB"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TFn-cr-XfS">
-                                                <rect key="frame" x="344.5" y="0.0" width="225" height="195"/>
+                                                <rect key="frame" x="176" y="0.0" width="108.5" height="195"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM1-J9-g9b">
                                                         <rect key="frame" x="0.0" y="0.0" width="27.5" height="31"/>
@@ -122,26 +184,45 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="28f-95-PLu">
-                                                <rect key="frame" x="579.5" y="0.0" width="178.5" height="195"/>
+                                                <rect key="frame" x="294.5" y="0.0" width="70.5" height="195"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-S2-4jg">
-                                                        <rect key="frame" x="65" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="11" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="t3s-3w-w6K"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-XZ-njZ">
-                                                        <rect key="frame" x="65" y="41" width="51" height="31"/>
+                                                        <rect key="frame" x="11" y="41" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="qDu-J6-8vo"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4m-OK-77H">
-                                                        <rect key="frame" x="65" y="82" width="51" height="31"/>
+                                                        <rect key="frame" x="11" y="82" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="9ph-zJ-4Pw"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JvD-Wk-yIT">
-                                                        <rect key="frame" x="65" y="123" width="51" height="31"/>
+                                                        <rect key="frame" x="11" y="123" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Nz-nz-dgx"/>
+                                                        </connections>
                                                     </switch>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLj-Li-flx">
-                                                        <rect key="frame" x="65" y="164" width="51" height="31"/>
+                                                        <rect key="frame" x="11" y="164" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="toggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="uop-9a-PZd"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="28f-95-PLu" firstAttribute="height" secondItem="TFn-cr-XfS" secondAttribute="height" id="vHN-l7-3gg"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <variation key="heightClass=compact" axis="horizontal"/>
@@ -155,14 +236,26 @@
                             <constraint firstAttribute="trailing" secondItem="xPT-6m-rAb" secondAttribute="trailing" id="wde-7n-X9o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arms" destination="PRs-GB-nVp" id="DD4-6j-cVB"/>
+                        <outlet property="ears" destination="uU4-wk-yKK" id="JUU-es-t0b"/>
+                        <outlet property="eyebrows" destination="NVt-84-Cq0" id="EWi-nz-lGx"/>
+                        <outlet property="eyes" destination="wD4-Ji-52r" id="PVt-no-Ctd"/>
+                        <outlet property="glasses" destination="Txk-Xq-cbS" id="Ayj-kI-ljU"/>
+                        <outlet property="hat" destination="y0e-fV-jyj" id="2xb-Lv-MMa"/>
+                        <outlet property="mouth" destination="eCb-Jp-Ty3" id="bjZ-dF-6gM"/>
+                        <outlet property="mustache" destination="d8f-uF-va8" id="LRP-cf-h1D"/>
+                        <outlet property="nose" destination="ZTi-CA-SyK" id="u0A-hu-d67"/>
+                        <outlet property="shoes" destination="xsX-6y-sUV" id="IFA-Ef-RXE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.875" y="36.971830985915496"/>
+            <point key="canvasLocation" x="31.199999999999999" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>
-        <image name="E95B511D-2D76-4F89-BD8E-8AA325DE00D0" width="367" height="428">
+        <image name="E064F5F6-60D2-4387-AE19-C3DDC947770B" width="367" height="428">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -10688,6 +10781,16 @@ AAmgigAJoIwACaCRAAmgmQAJoJwACaChAAmgqQAJoKwACaC+AAmgwQAJoMYAAAAAAAAEAQAAAAAAAABB
 AAAAAAAAAAAAAAAAAAmgyA
 </mutableData>
         </image>
+        <image name="arms" width="367" height="428"/>
         <image name="body" width="367" height="428"/>
+        <image name="ears" width="367" height="428"/>
+        <image name="eyebrows" width="367" height="428"/>
+        <image name="eyes" width="367" height="428"/>
+        <image name="glasses" width="367" height="428"/>
+        <image name="hat" width="367" height="428"/>
+        <image name="mouth" width="367" height="428"/>
+        <image name="mustache" width="367" height="428"/>
+        <image name="nose" width="367" height="428"/>
+        <image name="shoes" width="367" height="428"/>
     </resources>
 </document>
