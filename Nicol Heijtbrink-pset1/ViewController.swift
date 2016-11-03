@@ -9,21 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // links all the images to outlets to the viewcontroller
-    @IBOutlet weak var arms: UIImageView!
-    @IBOutlet weak var nose: UIImageView!
-    @IBOutlet weak var shoes: UIImageView!
-    @IBOutlet weak var mustache: UIImageView!
-    @IBOutlet weak var mouth: UIImageView!
-    @IBOutlet weak var hat: UIImageView!
-    @IBOutlet weak var glasses: UIImageView!
-    @IBOutlet weak var eyes: UIImageView!
-    @IBOutlet weak var eyebrows: UIImageView!
-    @IBOutlet weak var ears: UIImageView!
-
+    
+    // links all the images to outlets to the viewcontroller in an outlet collection
+    @IBOutlet var attributes: [UIImageView]!
+    
+    // the function for switch attributes on and off
     @IBAction func toggleSwitch(_ sender: UISwitch) {
-    }
 
+        for imageView in attributes{
+            
+            // each sender has been given the same tag as its corresponding image
+            if imageView.tag == sender.tag{
+                
+                // the image shoud be hidden if the switch is off
+                imageView.isHidden = !sender.isOn
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
